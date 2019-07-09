@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Testing New Searchbox</title>
@@ -16,9 +16,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="container">
-            <div class="col-12">
-                <form>
+        <div class="jumbotron-fluid"
+            <div class="container-fluid">
+                <form action="https://anderson.on.worldcat.org/search?" target="_blank" method="GET" autocomplete="off">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <!--Code from Bootstrap documentation
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>-->
+                            <select>
+                                <option selected value="booksmedia">Books & Media</option>
+                                <option value="artiles">Articles</option>
+                                <option value="allfmts">All Formats</option>
+                            </select>
+                        </div>
+                        <input name="queryString" type="text" placeholder="Search catalog" class="form-control" aria-label="Text input with dropdown button">
+                    </div>
                 </form>
             </div>
         </div>
