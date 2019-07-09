@@ -14,8 +14,9 @@ jQuery(document).ready(function($){
         let queryString = $(this).children('.input-group').children('#queryString').val();
         let facet = $(this).children('.input-group').children('.input-group-prepend').children('#search-facet').val();
 
-        //Database list
+        //Database list and formats
         let databaseList = '';
+        let formats= '';
         if (facet == 'booksmedia'){
             databaseList = BOOKS_AND_MEDIA;
         } else if (facet ==  'articles') {
@@ -34,5 +35,7 @@ jQuery(document).ready(function($){
         console.log("database list = " + databaseList);
 
         window.open(DISCOVERY_URL + '&databaseList=' + databaseList + '&queryString=' + queryString, '_blank');
+
+        console.log('search performed');
     })
 })
