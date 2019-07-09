@@ -18,7 +18,7 @@
     <body>
         <div class="jumbotron-fluid"
             <div class="container-fluid">
-                <form action="https://anderson.on.worldcat.org/search?" target="_blank" method="GET" autocomplete="off">
+                <form id="catalog-search" autocomplete="off">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <!--Code from Bootstrap documentation
@@ -30,16 +30,21 @@
                                 <div role="separator" class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Separated link</a>
                             </div>-->
-                            <select>
+                            <select id="search-facet" class="form-control">
                                 <option selected value="booksmedia">Books & Media</option>
-                                <option value="artiles">Articles</option>
+                                <option value="articles">Articles</option>
                                 <option value="allfmts">All Formats</option>
                             </select>
                         </div>
-                        <input name="queryString" type="text" placeholder="Search catalog" class="form-control" aria-label="Text input with dropdown button">
+                        <input name="queryString" id="queryString" type="text" placeholder="Search catalog" class="form-control" aria-label="Text input with dropdown button">
                     </div>
+                    <!--<input type="submit">-->
                 </form>
             </div>
         </div>
+        <!-- Custom JS -->
+        <script src="search.js" type="text/javascript"></<script>
+
+        </script>
     </body>
 </html>
