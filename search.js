@@ -18,15 +18,20 @@ jQuery(document).ready(function($){
 
         //Database list and formats
         let databaseList = '';
-        let formats= '';
-        if (facet == 'booksmedia'){
-            databaseList = BOOKS_AND_MEDIA;
-            formats = BOOKS_AND_MEDIA_FORMAT_STRING;
-        } else if (facet ==  'articles') {
-            databaseList = ARTICLES;
-            formats = ARTICLES_FORMAT_STRING;
-        } else if (facet == 'allfmts') {
-            databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+        let formats = '';
+
+        switch(facet){
+            case 'booksmedia':
+                databaseList = BOOKS_AND_MEDIA;
+                formats = BOOKS_AND_MEDIA_FORMAT_STRING;
+                break;
+            case 'articles':
+                databaseList = ARTICLES;
+                formats = ARTICLES_FORMAT_STRING;
+                break;
+            case 'allfmts':
+                databaseList = BOOKS_AND_MEDIA + ',' + ARTICLES;
+                break;
         }
 
         //Check URL
