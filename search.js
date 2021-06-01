@@ -4,11 +4,6 @@ const ARTICLES = '638,897,944,1271,1275,1279,1697,1708,1721,1723,1725,1728,1734,
 const ARTICLES_FORMAT_STRING = "&format=Artchap&format=Encyc";
 const DISCOVERY_URL = 'https://anderson.on.worldcat.org/v2/search?';
 
-
-//https://anderson.on.worldcat.org/v2/search?&databaseList=197,239,283,638,1279,1708,1736,1920,1978,2175,2513,3369,4162,&queryString=hobbit&format=Book&format=Msscr&format=Jrnl&format=News&format=music&format=Video&format=archv&year=all&yearFrom=&yearTo=&language=all
-//https://anderson.on.worldcat.org/v2/search?databaseList=197%2C239%2C283%2C638%2C1279%2C1708%2C1736%2C1920%2C1978%2C2175%2C2513%2C3369%2C4162%2C&queryString=hobbit&format=Book&format=Msscr&format=Jrnl&format=News&format=music&format=Video&format=archv&year=all&yearFrom=&yearTo=&language=all&scope=wz%3A1274&changedFacet=scope&clusterResults=true&groupVariantRecords=false
-
-
 jQuery(document).ready(function($){
     //Check JS is loaded
     console.log("JS Loaded");
